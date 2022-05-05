@@ -16,7 +16,6 @@ namespace WebApi1.Controllers
             _customerDal = customerDal;
         }
 
-
         [HttpGet("")]
         public IActionResult Get()
         {
@@ -90,6 +89,37 @@ namespace WebApi1.Controllers
         }
 
 
+        [HttpGet("Orders")]
+        public IActionResult GetOrdersByCustomerId(string customerId)
+        {
+            try
+            {
+                var result = _customerDal.GetOrdersByCustomerId(customerId);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+            }
+            return BadRequest();
+        }
+
+        [HttpGet("Alphabetic")]
+        public IActionResult GetCustomersByOrderby(bool isAlphabetic)
+        {
+            try
+            {
+                var result=_customerDal.GetCustomersByOrderBy(isAlphabetic);
+                return Ok(result);
+            }
+            catch (Exception)
+            {
+
+            }
+            return BadRequest();
+        }
+
+      
 
 
 

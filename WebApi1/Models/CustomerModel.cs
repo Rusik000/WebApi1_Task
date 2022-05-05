@@ -2,18 +2,18 @@
 {
     public class CustomerModel
     {
-        public int CustomerId { get; set; }
+        public string CustomerId { get; set; }
 
-        public string CompanyName { get; set; }
+        public string CompanyName { get; set; } = string.Empty;
 
-        public string ContactName { get; set; }
-        public string ContactTitle { get; set; }
+        public string ContactName { get; set; } = string.Empty;
+        public string ContactTitle { get; set; } = string.Empty;
 
-        public string Address { get; set; }
-        public string City { get; set; }
+        public string Address { get; set; } = string.Empty;
+        public string City { get; set; } = string.Empty;
 
-        public string Country { get; set; }
-        public string Phone { get; set; }
+        public string Country { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
 
     }
 }

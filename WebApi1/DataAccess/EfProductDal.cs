@@ -11,7 +11,7 @@ namespace WebApi1.DataAccess
             {
                 var result = from p in context.Products
                              join c in context.Categories
-                             on p.CategoryId equals c.CategoryId
+                             on p.CategoryId equals c.CategoryId    
                              select new ProductModel {
                              ProductId = p.ProductId,
                              CategoryName = c.CategoryName,
