@@ -2,7 +2,7 @@
 {
     public class Customer : IEntity
     {
-        public int CustomerId { get; set; }
+        public string CustomerId { get; set; }
 
         public string CompanyName { get; set; } = string.Empty;
 

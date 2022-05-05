@@ -70,7 +70,7 @@ namespace WebApi1.Controllers
             return BadRequest();
         }
 
-        [HttpDelete("{productId}")]
+        [HttpDelete("{customerId}")]
         public IActionResult Delete(int productId)
         {
             try
