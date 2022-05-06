@@ -37,6 +37,7 @@ namespace WebApi1.Controllers
                 return Ok(customer);
             }
             catch (Exception)
+
             {
 
             }
